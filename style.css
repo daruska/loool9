@@ -1,0 +1,566 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dws-wrapper{
+ margin-left: 50px;
+ top: 10%;
+ left: 31%;
+ margin-top: px;
+ margin-bottom: 50px;
+}
+.boxImg{
+ position: relative;
+ font-family: Cuprum, Arial, Helvetica, sans-serif;
+ width: 500px;
+ height: 300px;
+ 
+ overflow: hidden;
+}
+.boxImg img{
+ height: 300px;
+ transition: .5s;
+}
+
+.box1{
+	border-bottom: 2px solid black;
+	margin-bottom: 25px;
+	box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 2px 0px;
+}
+
+.container{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+.container:before, .container:after{
+ content: '';
+ width: 300px;
+ height: 300px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background: #1b70d5;
+ opacity: .1;
+ transition: 1s;
+}
+.container:before{
+ transform: translateX(-125%) rotate(45deg);
+}
+.container:after{
+ transform: translateX(195%) rotate(45deg);
+}
+.text{
+ position: absolute;
+ top: 10%;
+ color: #ffffff;
+ text-align: center;
+ z-index: 10;
+}
+.text h1{
+ margin-bottom: 20px;
+ 
+ font-size: 25px;
+ transform: scale(0);
+ transition: .5s;
+ margin-left: 0px;
+
+}
+.text p{
+ font-size: 16px;
+ margin: 0 100px;
+ text-align: justify;
+ transform: scale(2);
+ transition: .5s;
+ opacity: 0;
+ font-family: 'Cinzel Decorative', cursive;
+}
+
+
+a.bt{
+ position: absolute;
+ top: 109%;
+ left: 37%;
+ color: #ffffff;
+ text-decoration: none;
+ text-transform: uppercase;
+ border: 2px solid #ffffff;
+ padding:10px 30px;
+ border-radius: 8px;
+ opacity: 0;
+ transition: .2s ease-in-out;
+ overflow: hidden;
+}
+a.bt:before{
+ content: '';
+ position: absolute;
+ top: -8px;
+ left: -75px;
+ height: 50px;
+ width: 50px;
+ background: linear-gradient(90deg,rgba(255,255,255,.1), rgba(255,255,255,.5));
+ transform: skewX(-45deg);
+}
+
+a.bt:hover::before{
+ left: 150px;
+ transition: .5s ease-in-out;
+}
+main{
+ 
+}
+.boxImg:hover img{
+ transform: rotate(-30deg) scale(2);
+ filter: blur(2px);
+}
+.boxImg:hover a.bt{
+ opacity: 1;
+ transition: .5s;
+}
+.boxImg:hover .container::before{
+ transform: translateX(92%) rotate(45deg) scale(2);
+ transition: .5s;
+ opacity: .6;
+}
+.boxImg:hover .container::after{
+ transform: translateX(-25%) rotate(45deg) scale(2);
+ transition: .5s;
+ opacity: .6;
+}
+.boxImg:hover .text h1{
+ transform: scale(1);
+}
+.boxImg:hover .text p{
+ transform: scale(1);
+ opacity: 1;
+}
+
+
+
+/*IMG*/
+
+.bann-avatar{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.bannavatar{
+    margin-left: 10px;
+}
+
+/*BATOMM?*/
+
+li{
+    list-style: none;
+    
+}
+  
+.cont{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 20px;
+}
+
+.one-button {
+    flex-shrink: 0; /*забороняю зменшуватись*/
+    min-width: 30px;
+    position: relative;
+    padding: 0.4em;
+    border-radius: 100%;
+    box-shadow: 1px 0px 10px 2px #666;
+    border: 1px solid #000;
+}
+.one-button + .one-button{ /*обираю всі елементи з класом .one-button починаючи з другого*/
+    margin-left: 10px;
+}
+
+.one-button:hover i{
+    color: #09c; 
+    transition: color 0.4s;
+}
+
+.one-button:active{
+    top: 10px;
+}
+
+.one-button i{
+	color: #fff;
+	
+  }
+/*,--------------------------------------------*/
+
+.social{
+    margin-right: 50px;
+}
+
+.blook{
+    display: block;
+    justify-content: flex-end;
+}
+
+
+/*background*/
+
+canvas {
+    position: fixed;   
+    z-index:-1;
+    width:100vw;
+    height:100vh;
+    top:0;
+}
+
+
+/*CSSSSSSS SECOND*/
+
+body{
+	/*background-image: url("321.jpg");*/
+}
+
+.wrapper {
+	background-color: black;
+	height:;
+    margin: 0 auto;
+    
+}
+
+
+header{
+	
+	margin-top:0px;
+	font-family: Cuprum, Arial, Helvetical, sans-serif;
+}
+
+.dws-menu{
+	margin-right: 20px;
+
+}
+.dws-menu ul,
+.dws-menu ol{
+	list-style: none;
+
+}
+
+
+.dws-menu>ul{
+	display:flex;
+	justify-content:flex-end;
+	margin-top: ;
+	margin-bottom: 0px;
+	padding-top: 9px;
+	
+}
+.dws-menu>ul li a{
+	display:block;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#88bfe8+0,70b0e0+100;Blue+3D+%2317 */
+background: black;
+
+	padding:10px 20px 10px 20px;
+	font-size: 14px;
+	color:#f3f3f5;
+	text-decoration: none;
+	text-transform:uppercase;
+	transition: all 0.3s ease;
+}
+.dws-menu>ul li{
+	position:relative;
+	
+	color:black;
+}
+.dws-menu>ul li> a i.fa{
+	position:flex;
+	top:15px;
+	left:12px;
+	font-size:20px;
+	margin-right: 10px;
+
+}
+.dws-menu>ul li:first-child{
+	/*border-left:1px solid #b2b3b5;*/
+}
+.dws-menu>ul li:last-child{
+	/*border-right:1px solid #babbbb;*/
+}
+.dws-menu li a:hover{
+/*background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+background: rgb(10, 10, 10); /* Old browsers */
+background: -moz-linear-gradient(top,  rgb(57, 60, 61) 0%, rgb(67, 69, 70) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgb(84, 86, 87) 0%,rgb(71, 73, 73) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgb(53, 62, 68) 0%,rgb(81, 82, 83) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bfe8', endColorstr='#70b0e0',GradientType=0 ); /* IE6-9 */
+
+
+
+	color:#ffffff;
+	box-shadow:1px 5px 10px -5px black;
+	transition: all 0.3s ease;
+}
+/*Sub menu*/
+/*c2488b*/
+.dws-menu li ul{
+	position:absolute;
+	min-width:150px;
+	display: none;
+	font-family: 'Rancho', cursive;
+}
+.dws-menu li>ul li{
+	border:1px solid #c7c8ca;
+}
+.dws-menu li>ul li a{
+	padding: 10px;
+	text-transform:none;
+	background: #e4e4e5;
+}
+.dws-menu li>ul li ul{
+	position: absolute;
+	right: -150px;
+	top:0;
+}
+.dws-menu li:hover>ul{
+	display:block;
+}
+
+/*section*/
+.main-content{
+	
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+	padding-left: 20px;
+	margin: 50px;
+	mar
+ }
+
+ .lol{
+	background: linear-gradient(to bottom, rgba(245,238,237,1) 0%, rgba(194,72,139,0.38) 100%);
+    
+ }
+
+
+ .h33{
+	
+	display:block;
+	text-align:center;
+ }
+
+ .h44{
+	display:block;
+	text-align:center;
+ }
+
+ .p-backg{
+	 margin-top: 10px;
+	 background-color: rgba(255, 255, 255, 0.082);
+	 margin-right: 5px;
+	 margin-left: 5px;
+ }
+ 
+ .about-section{
+	padding: 0px;
+ } 
+
+ .col{
+    flex: 1 0 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  
+    margin-top: 20px;
+}
+
+.col-heading{
+    text-transform: uppercase;
+    border-bottom: 2px solid #e7624d;
+    margin: 10px 0;
+    padding: 10px;
+    font: lighter 1.2rem 'Josefin Slab', serif;
+    font-size: 40px;
+    border-left: 2.6px solid #e7624d;
+    border-right: 2.6px solid #e7624d;
+    
+}
+
+.col-typ{
+	 display: flex;
+	  justify-content: space-between;
+	   align-items: flex-end;
+	}
+
+	.clo-typ2{
+		
+		margin-right:120px; 
+		
+	}
+
+.col2{
+   /* border-left: 2.6px solid #e7624d;
+    border-right: 2.6px solid #e7624d;*/
+    width: 600px;
+    background-color: #E5E2D3;
+}
+
+i{
+	
+	color: white;
+}
+
+.slide{
+	display: block;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+footer{
+width: 100%;
+
+background-color: rgba(30,87,153,1)	
+
+}
+
+/*CURRENCY*/
+form{
+	display: inline-block;
+	margin-left: 10px;
+	
+}
+
+input {
+	border:2px solid rgba(255,255,255,.5);
+	padding: 5px 15px;
+	color:rgba(255,255,255,.5);
+	border-radius:.25em;
+	background:transparent;
+    transition:all .100s;
+    width: 100px;
+}
+
+input:focus{
+    outline:none;
+    color:rgba(255,255,255,.75);
+    border-color:rgba(255,255,255,.75);
+}
+
+
+select{
+    background: transparent;
+    border: none;
+    color: white;
+}
+select:focus{
+    outline: none;
+}
+
+option{
+    color: gray;
+}
+.output{
+	padding: 5px;
+	border:2px solid rgba(15, 15, 15, 0.5);
+	margin: 5px;
+	margin-bottom: 5px;
+}
+.output, ::-webkit-input-placeholder{
+    color:rgba(255,255,255,.75);
+}
+
+.btn{
+    background-color: rgb(22, 21, 21);
+    color: #fff;
+    border: none;
+    padding: 5px;
+}
+
+.car-car{
+	display:flex;
+	margin-top: 100px;
+}
+
+
+/*FOOOOOOTEEER*/
+
+.foter2{
+	display: flex;
+	justify-content: space-between;
+}
+
+.map{
+	display: flex;
+	justify-content: flex-;
+	margin-right: 20px;
+	margin-bottom: 10px;
+
+}
+
+.box{
+	
+	
+		
+		
+		width: 400px;
+		padding: 40px;
+		background: rgba(0, 0, 0, 0.8);
+		box-sizing: border-box;
+		box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+	}
+	.box h2{
+		margin: 0 0 30px;
+		padding: 0;
+		color: #fff;
+		text-align: center;
+	}
+	.box .inputBox{
+		position: relative;
+	}
+	.box .inputBox input{
+		width: 100%;
+		padding: 10px 0;
+		font-size: 16px;
+		color:#fff;
+		letter-spacing: 1px;
+		margin-bottom: 30px;
+		border: none;
+		border-bottom: 1px solid #fff;
+		outline: none;
+		background: transparent;
+	}
+	.box .inputBox label{
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 10px 0;
+		font-size: 16px;
+		color:#fff;
+		pointer-events: none;
+		transition: .5s;
+	}
+	.box .inputBox input:focus ~ label,
+	.box .inputBox input:valid ~ label{
+		top: -18px;
+		left: 0px;
+		color: #03a9f4;
+		font-size: 12px;
+	}
+	.box input[type="submit"]{
+		background: transparent;
+		border: none;
+		outline: none;
+		color: #fff;
+		background: #03a9f4;
+		padding: 10px 20px;
+		cursor: pointer;
+		border-radius: 5px;
+	}

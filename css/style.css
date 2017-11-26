@@ -1,0 +1,213 @@
+
+body {
+	height: 100%;
+	font: 14px/24px Arial, sans-serif;
+	background-color: #ebebeb;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+} 
+
+
+header{
+	background:#393939;
+	}
+	
+.logo a{
+	display:inline-block;
+	width:80px;
+	height:65px;
+	background:#f26c4f;
+	color:white;
+	text-align:center;
+	vertical-align:middle;
+	font: bold 36px/50px Arial, cursive;
+	text-decoration: none;
+}
+
+.logo span{
+	color:white;
+	margin-left:15px;
+	font-size: 18px;
+}
+
+/*Galary*/
+
+.galary{
+	margin-top:10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.img-wrapper{
+	position: relative;
+	width: 65%;
+	margin-right: 15px;
+   height: 380px;
+   }
+   
+   .slide{
+	visibility: hidden;
+	position: absolute;
+	height: 380px;
+	opacity: 0;
+	width: 100%;
+	transition: visibility 0s, opacity 0.5s ease-in-out;
+   }
+   
+   .active-slide{
+	visibility: visible;
+	opacity: 1;
+   }
+
+article{
+	width: 35%;
+	padding: 15px;
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+}
+
+.scroll{
+width:60%;
+float :left;
+margin: 10px;
+transform:  translate(-60%) scale(0.9);
+opacity:0;
+
+}
+
+.scroll:nth-of-type(2n)
+{
+	float:right;
+	transform:  translate(60%) scale(0.9);
+
+}
+.pop{
+	opacity:1;
+	transform:  translate(0%) scale(1);
+	transition: all 1s ease-in-out;
+}
+
+.scroll:nth-of-type(2n).pop{
+transform:  translate(0%) scale(1);
+}
+
+
+
+
+.dws-menu{
+	margin-right: 20px;
+
+}
+.dws-menu ul,
+.dws-menu ol{
+	list-style: none;
+
+}
+
+
+.dws-menu>ul{
+	display:flex;
+	justify-content:flex-end;
+	margin-top: ;
+	margin-bottom: 0px;
+	padding-top: 9px;
+	
+}
+.dws-menu>ul li a{
+	display:block;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#88bfe8+0,70b0e0+100;Blue+3D+%2317 */
+background: black;
+
+	padding:10px 20px 10px 20px;
+	font-size: 14px;
+	color:#f3f3f5;
+	text-decoration: none;
+	text-transform:uppercase;
+	transition: all 0.3s ease;
+}
+.dws-menu>ul li{
+	position:relative;
+	
+	color:black;
+}
+.dws-menu>ul li> a i.fa{
+	position:flex;
+	top:15px;
+	left:12px;
+	font-size:20px;
+	margin-right: 10px;
+
+}
+.dws-menu>ul li:first-child{
+	/*border-left:1px solid #b2b3b5;*/
+}
+.dws-menu>ul li:last-child{
+	/*border-right:1px solid #babbbb;*/
+}
+.dws-menu li a:hover{
+/*background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+background: rgb(10, 10, 10); /* Old browsers */
+background: -moz-linear-gradient(top,  rgb(57, 60, 61) 0%, rgb(67, 69, 70) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgb(84, 86, 87) 0%,rgb(71, 73, 73) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgb(53, 62, 68) 0%,rgb(81, 82, 83) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bfe8', endColorstr='#70b0e0',GradientType=0 ); /* IE6-9 */
+
+
+
+	color:#ffffff;
+	box-shadow:1px 5px 10px -5px black;
+	transition: all 0.3s ease;
+}
+/*Sub menu*/
+/*c2488b*/
+.dws-menu li ul{
+	position:absolute;
+	min-width:150px;
+	display: none;
+	font-family: 'Rancho', cursive;
+}
+.dws-menu li>ul li{
+	border:1px solid #c7c8ca;
+}
+.dws-menu li>ul li a{
+	padding: 10px;
+	text-transform:none;
+	background: #e4e4e5;
+}
+.dws-menu li>ul li ul{
+	position: absolute;
+	right: -150px;
+	top:0;
+}
+.dws-menu li:hover>ul{
+	display:block;
+}
+
+.col-typ{
+	display: flex;
+	 justify-content: space-between;
+	  align-items: flex-end;
+   }
+
+   .blook{
+    display: block;
+    justify-content: flex-end;
+}
